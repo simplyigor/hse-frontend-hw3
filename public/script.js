@@ -1,3 +1,4 @@
+  /* Используем GET для обращения к Quotable API – выводит случайную цитату */
   function getRandomQuote() {
       fetch('https://api.quotable.io/random', {
         method: 'GET',
@@ -16,6 +17,7 @@
       });
     }
 
+/* Сброс страницы до дефолтного состояния – кнопка Reset all */
 function resetAll() {
   document.getElementById("quote").innerHTML = "A random quote will be displayed here";
   document.getElementById("author").innerHTML = "&mdash; Author";
@@ -23,6 +25,7 @@ function resetAll() {
   document.getElementById("author-db").innerHTML = "&mdash; Author";
 }
 
+/* Используем POST для добавления новых цитат пользователей в db.json */
 function addUserQuote() {
   const userQuote = document.getElementById('userQuote').value;
   const author = prompt("Enter the author of the quote:");
@@ -47,6 +50,7 @@ function addUserQuote() {
   });
 }
 
+/* Используем GET для того, чтобы вытащить и отобразить последнюю цитату, которую добавил пользователь */
 function getRecentPost() {
   fetch('http://localhost:3000/posts', {
     method: 'GET',
