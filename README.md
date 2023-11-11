@@ -18,4 +18,4 @@ P.S. Полученные с сервера данные динамически 
 ```
 npx json-server --watch db.json --port 3000
 ```
-Если не хочется запускать локально, то можно глянуть короткое видео с демонстрацией работы – [Google Drive](link)
+Если не хочется запускать локально, то можно глянуть короткое видео с демонстрацией работы – [Google Drive](https://drive.google.com/file/d/1ye4mQZ9UryVativBmHdiS8BjdkBA-NZ-/view?usp=sharing)
