@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW №3</title>
+  <!-- Подключаем шрифт из Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- Стили -->
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h3 class = "container_main-title">Random quote 📌</h3>
+        <div class = "container_main-description">Here you can get a random quote. To retrieve data from an external API - api.quotable.io - we have used method GET:</div>  
+        <figure class="text-area">
+            <blockquote>
+                <p id="quote">A random quote will be displayed here</p>
+            </blockquote>
+            <figcaption id="author"> &mdash; Author </figcaption>
+        </figure>
+        <button class="gimme-btn" onclick="getRandomQuote()">
+            Gimme a quote
+        </button>
+        <h3 class = "container_main-title-my">Add quote ✍🏼</h3>
+        <div class = "container_main-description">You can add your own quotes here. To add new entries to the local server, we have used method POST:</div>
+        <figure class="text-area">
+            <textarea class = "input-field" id="userQuote" placeholder="Your quote goes here..."></textarea>
+        </figure>
+        <button class="gimme-btn" onclick="addUserQuote()">
+            Add quote
+        </button>
+        <h3 class = "container_main-title-my">My latest quote 💬</h3>
+        <div class = "container_main-description">You can see the most recent quotes here. To retrieve data from the local server, we have used method GET:</div>
+        <figure class="text-area">
+            <blockquote>
+                <p id="post">The most recent quote will be displayed here</p>
+            </blockquote>
+            <figcaption id="author-db"> &mdash; Author </figcaption>
+        </figure> 
+        <button class="delete-btn" onclick="resetAll()">
+            Reset all
+        </button>           
+    </div>     
+    <!-- Подкючаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

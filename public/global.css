@@ -1,0 +1,43 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+  }
+  
+  :root {
+
+    /* Шрифт */
+    --font-family-comfortaa: 'Comfortaa', sans-serif;;
+
+    /* Начертание шрифта */
+    --font-weight-regular: 400;
+
+    /* Размер шрифта */
+    --font-size-xs: 12px;
+    --font-size-s: 15px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+
+    /* Цвета */
+    --primary-ube: #7c77be80;
+    --primary-pure-white: #ffffff;
+    --primary-soap: #cccceb;
+    --primary-black: #000000;
+    --primary-queen-pink: #ebccd1;
+    --primary-anti-flash-white: #f3f3f3;
+    --primary-royal-purple: #7357ae;
+    --primary-blue-bolt: #00affa;
+    --primary-rich-electric-blue: #0190cd;
+    --primary-deep-mauve: #D981C9;
+  }
+
+  body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: var(--font-family-comfortaa);
+  }
+
+  h3 {
+    font-family: var(--font-family-comfortaa);
+  }
