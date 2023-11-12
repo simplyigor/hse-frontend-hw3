@@ -71,5 +71,27 @@ function getRecentPost() {
   });
 }
 
+/* Используем GET для того, чтобы вытащить и отобразить ВСЕ цитаты, которуе добавил пользователь */
+function getAllQuotes() {
+  fetch('http://localhost:3000/posts', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    let quotes = '';
+    data.forEach(post => {
+      quotes += `${post.title} - ${post.author}\n`;
+    });
+    alert(quotes);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+
 
 
